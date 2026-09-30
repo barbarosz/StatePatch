@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Model weights / large artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Experiment outputs
+results/
+outputs/
+checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
