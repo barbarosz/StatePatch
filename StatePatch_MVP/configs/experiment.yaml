@@ -1,0 +1,11 @@
+project: StatePatch
+model: Self-Forcing / Wan2.1-1.3B
+primary_state_types: [color, position, count, shape]
+probe:
+  pooling: mean
+  cv: 5
+causal_patch:
+  alpha_values: [0.25, 0.5, 0.75, 1.0]
+  controls: [random_subspace, wrong_pair, wrong_call, wrong_block]
+kill_criterion:
+  by_week_4: "No reproducible state-specific effect beyond matched random controls"
